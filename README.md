@@ -81,3 +81,14 @@ A complete troubleshooting log and configuration guide for running **Firefox ESR
 3. Manually drag/resize Firefox's window borders to the desired left-half position (rather than using temporary edge-tiling).
 4. Close Firefox cleanly with **`Ctrl + Q`** so it writes the geometry to `xulstore.json`.
 5. Reopen Firefox—it now restores the exact size and screen position permanently.
+
+## Quick Automated Setup
+
+Close Firefox completely (`Ctrl + Q`), then run:
+
+```bash
+git clone https://github.com
+cd parrot-lxqt-firefox-esr-optimization
+chmod +x setup.sh
+./setup.sh
+```
